@@ -15,18 +15,15 @@
 # inherit from common klte
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := kltexx,kltelra,kltetmo,kltecan,klteatt,kltedv,klteub,klteacg,klte
+TARGET_OTA_ASSERT_DEVICE := kltedv,klte
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_eur_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_dv_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/klte/init/init_klte.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/kltedv/init/init_klte.c
 TARGET_UNIFIED_DEVICE := true
-
-# NFC
-BOARD_NFC_CHIPSET := pn547
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
@@ -35,7 +32,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2621440000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12669926400
 
 # Radio
-BOARD_RIL_CLASS := ../../../device/samsung/klte/ril
+BOARD_RIL_CLASS := ../../../device/samsung/kltedv/ril
 
 # inherit from the proprietary version
--include vendor/samsung/klte/BoardConfigVendor.mk
+-include vendor/samsung/kltedv/BoardConfigVendor.mk

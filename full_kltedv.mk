@@ -23,4 +23,4 @@ PRODUCT_NAME := full_kltexx
 PRODUCT_DEVICE := kltexx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := klte
+PRODUCT_MODEL := kltedv
