@@ -23,6 +23,9 @@ $(call inherit-product-if-exists, vendor/samsung/kltedv/kltedv-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # NFC
+PRODUCT_PACKAGES += \
+    nfc_nci.bcm2079x.default
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b04.conf:system/etc/libnfc-brcm-20791b04.conf \
