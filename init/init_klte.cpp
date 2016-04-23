@@ -63,10 +63,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     if (strstr(bootloader, "G900I")) {
         /* kltedv */
-        property_set("ro.build.fingerprint", "samsung/kltedv/klte:4.4.2/KOT49H/G900IDVU1ANC6:user/release-keys");
-        property_set("ro.build.description", "kltedv-user 4.4.2 KOT49H G900IDVU1ANC6 release-keys");
+        property_set("ro.build.fingerprint", "samsung/kltedd/klte:6.0.1/MMB29M/G900IDDU1CPD1:user/release-keys");
+        property_set("ro.build.description", "kltedd-user 6.0.1 MMB29M G900IDDU1CPD1 release-keys");
         property_set("ro.product.model", "SM-G900I");
-        property_set("ro.product.device", "kltedv");
+        property_set("ro.product.device", "klte");
         gsm_properties();
     }
 
