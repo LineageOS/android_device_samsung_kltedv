@@ -1,7 +1,3 @@
-# Bluetooth firmware
-vendor/firmware/bcm4350.hcd
-vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0213_K_LTE_ORC.hcd
-
 # GPS
 -app/com.qualcomm.location.apk
 etc/permissions/com.qualcomm.location.xml
