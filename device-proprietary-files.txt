@@ -6,7 +6,6 @@ vendor/firmware/bcm2079xB5_pre_firmware.ncd
 
 # Qualcomm framework
 lib/libmdmdetect.so
-lib/libperipheral_client.so
 vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
@@ -17,7 +16,6 @@ vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
