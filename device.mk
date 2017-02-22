@@ -23,10 +23,6 @@ $(call inherit-product-if-exists, vendor/samsung/kltedv/kltedv-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
-
 # NFC
 PRODUCT_PACKAGES += \
     nfc_nci.bcm2079x.default
