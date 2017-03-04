@@ -54,8 +54,8 @@ void init_target_properties()
 
     if (bootloader.find("G900I") == 0) {
         /* kltedv */
-        property_set("ro.build.fingerprint", "samsung/kltedv/klte:6.0.1/MMB29M/G900IDVU1CPL1:user/release-keys");
-        property_set("ro.build.description", "kltedv-user 6.0.1 MMB29M G900IDVU1CPL1 release-keys");
+        property_set("ro.build.fingerprint", "samsung/kltedv/klte:6.0.1/MMB29M/G900IDVS1CQA1:user/release-keys");
+        property_set("ro.build.description", "kltedv-user 6.0.1 MMB29M G900IDVS1CQA1 release-keys");
         property_set("ro.product.model", "SM-G900I");
         property_set("ro.product.device", "klte");
         gsm_properties();
