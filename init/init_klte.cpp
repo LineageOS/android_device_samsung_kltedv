@@ -37,6 +37,18 @@
 
 #include "init_msm8974.h"
 
+void cdma_properties(char const *default_cdma_sub,
+        char const *operator_numeric, char const *operator_alpha)
+{
+    property_set("ril.subscription.types", "NV,RUIM");
+    property_set("ro.cdma.home.operator.numeric", operator_numeric);
+    property_set("ro.cdma.home.operator.alpha", operator_alpha);
+    property_set("ro.telephony.default_cdma_sub", default_cdma_sub);
+    property_set("ro.telephony.default_network", "10");
+    property_set("ro.telephony.ril.config", "newDriverCallU,newDialCode");
+    property_set("telephony.lteOnCdmaDevice", "1");
+}
+
 void gsm_properties()
 {
     property_set("telephony.lteOnGsmDevice", "1");
@@ -59,6 +71,14 @@ void init_target_properties()
         property_override("ro.product.model", "SM-G900I");
         property_override("ro.product.device", "klte");
         gsm_properties();
+    } else if (bootloader.find("G900P") == 0) {
+        /* kltespr */
+        property_override("ro.build.fingerprint", "samsung/kltespr/kltespr:6.0.1/MMB29M/G900PVPS3CQD1:user/release-keys");
+        property_override("ro.build.description", "kltespr-user 6.0.1 MMB29M G900PVPS3CQD1 release-keys");
+        property_override("ro.product.model", "SM-G900P");
+        property_override("ro.product.device", "kltespr");
+        property_set("telephony.sms.pseudo_multipart", "1");
+        cdma_properties("1", "310120", "Sprint");
     }
 
     std::string device = property_get("ro.product.device");

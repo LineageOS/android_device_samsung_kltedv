@@ -1,0 +1,15 @@
+## Sprint blobs - Pinned to unknown version
+# Radio
+blobs/spr/bin/efsks|cadd0140bb8f2123b23d23055fe3fb616625fd6f
+blobs/spr/bin/ks|381e47b2ff8a3798eea4153fd66935a40ca801bc
+blobs/spr/bin/qcks|f196205484a84728c600983f0e6846947ce24fc7
+blobs/spr/bin/qmuxd|02c17830bef1747e7ec244374fd7388eb1477158
+blobs/spr/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
+blobs/spr/bin/rild|0b849cf10cb658e425e871e0d3cf86fe2ccdafd7
+blobs/spr/bin/rmt_storage|26401e258b730a6426ecfeaf5ebf89b7d3591e16
+blobs/spr/lib/libreference-ril.so|bca1a7e61506368fe1937a3204e611a19ed0e306
+blobs/spr/lib/libril.so|27c101223d96af69d9bbfa2db869cc161bd618a2
+blobs/spr/lib/libsec-ril.so|a464df06e3fd9de6aa8e6e0f449c5ca733d236ca
+blobs/spr/lib/libsecnativefeature.so|74ae0c6e68f111ce3b29099411a71752e1703d80
+blobs/spr/lib/libsecril-client.so|3db2a9fd59cfcf25a3d478e4494ba6348642db4e
+blobs/spr/vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5

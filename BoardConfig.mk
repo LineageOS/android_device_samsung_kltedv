@@ -16,7 +16,7 @@
 # inherit from common klte
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := kltedv,klte
+TARGET_OTA_ASSERT_DEVICE := kltedv,kltespr,klte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_klte_bcm2079x_defconfig
@@ -31,6 +31,9 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 524288000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2587885568
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12442385920
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/klte-common/releasetools
 
 # inherit from the proprietary version
 -include vendor/samsung/kltedv/BoardConfigVendor.mk

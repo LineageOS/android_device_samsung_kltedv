@@ -3,18 +3,3 @@ vendor/firmware/bcm2079xB4_firmware.ncd
 vendor/firmware/bcm2079xB4_pre_firmware.ncd
 vendor/firmware/bcm2079xB5_firmware.ncd
 vendor/firmware/bcm2079xB5_pre_firmware.ncd
-
-# Radio
-bin/efsks
-bin/ks
-bin/qcks
-bin/qmuxd
-bin/rfs_access
-bin/rild
-bin/rmt_storage
-lib/libreference-ril.so
-lib/libril.so
-lib/libsec-ril.so
-lib/libsecnativefeature.so
-lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so
