@@ -16,7 +16,7 @@
 # inherit from common klte
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := kltedv,kltespr,klte
+TARGET_OTA_ASSERT_DEVICE := kltedv,klte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_klte_bcm2079x_defconfig
