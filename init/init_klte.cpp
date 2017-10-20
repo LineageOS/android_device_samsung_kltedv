@@ -38,14 +38,18 @@
 
 #include "init_msm8974.h"
 
-void cdma_properties(char const *default_cdma_sub,
-        char const *operator_numeric, char const *operator_alpha)
+void cdma_properties(char const *operator_alpha,
+        char const *operator_numeric,
+        char const *default_network)
 {
-    property_set("ril.subscription.types", "NV,RUIM");
-    property_set("ro.cdma.home.operator.numeric", operator_numeric);
+    /* Dynamic CDMA Properties */
     property_set("ro.cdma.home.operator.alpha", operator_alpha);
-    property_set("ro.telephony.default_cdma_sub", default_cdma_sub);
-    property_set("ro.telephony.default_network", "8");
+    property_set("ro.cdma.home.operator.numeric", operator_numeric);
+    property_set("ro.telephony.default_network", default_network);
+
+    /* Static CDMA Properties */
+    property_set("ril.subscription.types", "NV,RUIM");
+    property_set("ro.telephony.default_cdma_sub", "1");
     property_set("telephony.lteOnCdmaDevice", "1");
 }
 
@@ -77,7 +81,7 @@ void init_target_properties()
         property_override("ro.product.model", "SM-G900P");
         property_override("ro.product.device", "kltespr");
         property_set("telephony.sms.pseudo_multipart", "1");
-        cdma_properties("1", "310120", "Sprint");
+        cdma_properties("Sprint", "310120", "8");
     }
 
     std::string device = property_get("ro.product.device");
