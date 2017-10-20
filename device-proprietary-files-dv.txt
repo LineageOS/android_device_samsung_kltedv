@@ -1,15 +1,15 @@
-## DV blobs - Pinned to unknown version
+## DV blobs - Pinned to G900IZTS1BPG1_G900IZZT1BPG1_BRI
 # Radio
-blobs/dv/bin/efsks|2e543b0c51940f52a9ffc98ab42aa4f3960db600
-blobs/dv/bin/ks|381e47b2ff8a3798eea4153fd66935a40ca801bc
-blobs/dv/bin/qcks|2ec2392cab62367e48bbaff120596a7be99d82b6
-blobs/dv/bin/qmuxd|02c17830bef1747e7ec244374fd7388eb1477158
-blobs/dv/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
-blobs/dv/bin/rild|57420dbd16dca5b44cfe18bfca00cd3ae23b3a05
-blobs/dv/bin/rmt_storage|26401e258b730a6426ecfeaf5ebf89b7d3591e16
-blobs/dv/lib/libreference-ril.so|bca1a7e61506368fe1937a3204e611a19ed0e306
-blobs/dv/lib/libril.so|aebfbe2448d032c1fb14d3bef41e771d9537c6a2
-blobs/dv/lib/libsec-ril.so|d898671c89169809c0e2a6bb008f0eb2298be2a0
-blobs/dv/lib/libsecnativefeature.so|74ae0c6e68f111ce3b29099411a71752e1703d80
-blobs/dv/lib/libsecril-client.so|3db2a9fd59cfcf25a3d478e4494ba6348642db4e
-blobs/dv/vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
+bin/efsks:blobs/dv/bin/efsks|2a96a6753806ea4146bbf5d038d291dc8bd513c0
+bin/ks:blobs/dv/bin/ks|949406ae5d1b74034b3828af1905a181e4b69961
+bin/qcks:blobs/dv/bin/qcks|8724d6f5d0a706a981cf1783f319d8cf05c87f66
+bin/qmuxd:blobs/dv/bin/qmuxd|e257d63996812e2eb23810bda59913f558ee03d2
+bin/rfs_access:blobs/dv/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
+bin/rild:blobs/dv/bin/rild|0b849cf10cb658e425e871e0d3cf86fe2ccdafd7
+bin/rmt_storage:blobs/dv/bin/rmt_storage|000ddcabfc9416e9a27ba6d04860cc14b6803cdd
+lib/libreference-ril.so:blobs/dv/lib/libreference-ril.so|bca1a7e61506368fe1937a3204e611a19ed0e306
+lib/libril.so:blobs/dv/lib/libril.so|753616b4f2cb41cb55f990565d75d21a003ec929
+lib/libsec-ril.so:blobs/dv/lib/libsec-ril.so|4bad54a2a172ba4f5e4b0b37efa0c49c85e3a05e
+lib/libsecnativefeature.so:blobs/dv/lib/libsecnativefeature.so|74ae0c6e68f111ce3b29099411a71752e1703d80
+lib/libsecril-client.so:blobs/dv/lib/libsecril-client.so|3db2a9fd59cfcf25a3d478e4494ba6348642db4e
+vendor/lib/libril-qcril-hook-oem.so:blobs/dv/vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
