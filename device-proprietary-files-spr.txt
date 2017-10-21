@@ -1,12 +1,4 @@
 ## Sprint blobs - Pinned to G900PVPU3BOK4_G900PSPT3BOK4_SPR
 # Radio
-bin/efsks:blobs/spr/bin/efsks|20353c6930041b856e3cb673bd605d3f527d9b88
-bin/ks:blobs/spr/bin/ks|381e47b2ff8a3798eea4153fd66935a40ca801bc
-bin/qcks:blobs/spr/bin/qcks|648e7cb8b5ab93f373d8211f8e78ff8f064e57ae
-bin/qmuxd:blobs/spr/bin/qmuxd|02c17830bef1747e7ec244374fd7388eb1477158
-bin/rfs_access:blobs/spr/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
-bin/rild:blobs/spr/bin/rild|0b849cf10cb658e425e871e0d3cf86fe2ccdafd7
-bin/rmt_storage:blobs/spr/bin/rmt_storage|26401e258b730a6426ecfeaf5ebf89b7d3591e16
 lib/libril.so:blobs/spr/lib/libril.so|27c101223d96af69d9bbfa2db869cc161bd618a2
 lib/libsec-ril.so:blobs/spr/lib/libsec-ril.so|408510e5d9d1935522aba554da81347f29932902
-vendor/lib/libril-qcril-hook-oem.so:blobs/spr/vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
