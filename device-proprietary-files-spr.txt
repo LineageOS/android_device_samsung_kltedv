@@ -7,9 +7,6 @@ bin/qmuxd:blobs/spr/bin/qmuxd|02c17830bef1747e7ec244374fd7388eb1477158
 bin/rfs_access:blobs/spr/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
 bin/rild:blobs/spr/bin/rild|0b849cf10cb658e425e871e0d3cf86fe2ccdafd7
 bin/rmt_storage:blobs/spr/bin/rmt_storage|26401e258b730a6426ecfeaf5ebf89b7d3591e16
-lib/libreference-ril.so:blobs/spr/lib/libreference-ril.so|bca1a7e61506368fe1937a3204e611a19ed0e306
 lib/libril.so:blobs/spr/lib/libril.so|27c101223d96af69d9bbfa2db869cc161bd618a2
 lib/libsec-ril.so:blobs/spr/lib/libsec-ril.so|408510e5d9d1935522aba554da81347f29932902
-lib/libsecnativefeature.so:blobs/spr/lib/libsecnativefeature.so|74ae0c6e68f111ce3b29099411a71752e1703d80
-lib/libsecril-client.so:blobs/spr/lib/libsecril-client.so|3db2a9fd59cfcf25a3d478e4494ba6348642db4e
 vendor/lib/libril-qcril-hook-oem.so:blobs/spr/vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
