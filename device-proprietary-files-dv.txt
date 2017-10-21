@@ -10,6 +10,4 @@ bin/rmt_storage:blobs/dv/bin/rmt_storage|000ddcabfc9416e9a27ba6d04860cc14b6803cd
 lib/libreference-ril.so:blobs/dv/lib/libreference-ril.so|bca1a7e61506368fe1937a3204e611a19ed0e306
 lib/libril.so:blobs/dv/lib/libril.so|753616b4f2cb41cb55f990565d75d21a003ec929
 lib/libsec-ril.so:blobs/dv/lib/libsec-ril.so|4bad54a2a172ba4f5e4b0b37efa0c49c85e3a05e
-lib/libsecnativefeature.so:blobs/dv/lib/libsecnativefeature.so|74ae0c6e68f111ce3b29099411a71752e1703d80
-lib/libsecril-client.so:blobs/dv/lib/libsecril-client.so|3db2a9fd59cfcf25a3d478e4494ba6348642db4e
 vendor/lib/libril-qcril-hook-oem.so:blobs/dv/vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
