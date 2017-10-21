@@ -1,4 +1,3 @@
 ## DV blobs - Pinned to G900IZTS1BPG1_G900IZZT1BPG1_BRI
 # Radio
-lib/libril.so:blobs/dv/lib/libril.so|753616b4f2cb41cb55f990565d75d21a003ec929
 lib/libsec-ril.so:blobs/dv/lib/libsec-ril.so|4bad54a2a172ba4f5e4b0b37efa0c49c85e3a05e
