@@ -38,14 +38,25 @@
 
 #include "init_msm8974.h"
 
+void set_rild_libpath(char const *variant)
+{
+    std::string libpath("/system/vendor/lib/libsec-ril.");
+    libpath += variant;
+    libpath += ".so";
+
+    property_override("rild.libpath", libpath.c_str());
+}
+
 void cdma_properties(char const *operator_alpha,
         char const *operator_numeric,
-        char const *default_network)
+        char const *default_network,
+        char const *rild_lib_variant)
 {
     /* Dynamic CDMA Properties */
     property_set("ro.cdma.home.operator.alpha", operator_alpha);
     property_set("ro.cdma.home.operator.numeric", operator_numeric);
     property_set("ro.telephony.default_network", default_network);
+    set_rild_libpath(rild_lib_variant);
 
     /* Static CDMA Properties */
     property_set("ril.subscription.types", "NV,RUIM");
@@ -53,8 +64,10 @@ void cdma_properties(char const *operator_alpha,
     property_set("telephony.lteOnCdmaDevice", "1");
 }
 
-void gsm_properties()
+void gsm_properties(char const *rild_lib_variant)
 {
+    set_rild_libpath(rild_lib_variant);
+
     property_set("telephony.lteOnGsmDevice", "1");
     property_set("ro.telephony.default_network", "9");
 }
@@ -73,7 +86,7 @@ void init_target_properties()
         property_override("ro.build.description", "kltedv-user 6.0.1 MMB29M G900IDVS1CQE1 release-keys");
         property_override("ro.product.model", "SM-G900I");
         property_override("ro.product.device", "klte");
-        gsm_properties();
+        gsm_properties("dv");
     } else if (bootloader.find("G900P") == 0) {
         /* kltespr */
         property_override("ro.build.fingerprint", "samsung/kltespr/kltespr:6.0.1/MMB29M/G900PVPS3CQD1:user/release-keys");
@@ -81,7 +94,7 @@ void init_target_properties()
         property_override("ro.product.model", "SM-G900P");
         property_override("ro.product.device", "kltespr");
         property_set("telephony.sms.pseudo_multipart", "1");
-        cdma_properties("Sprint", "310120", "8");
+        cdma_properties("Sprint", "310120", "8", "spr");
     }
 
     std::string device = property_get("ro.product.device");
