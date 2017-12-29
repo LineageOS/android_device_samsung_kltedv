@@ -23,6 +23,9 @@ $(call inherit-product-if-exists, vendor/samsung/kltedv/kltedv-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Fingerprint
+$(call inherit-product, device/samsung/klte-common/fingerprint/product.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     nfc_nci.bcm2079x.default
