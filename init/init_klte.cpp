@@ -86,17 +86,17 @@ void init_target_properties()
 
     if (bootloader.find("G900I") == 0) {
         /* kltedv */
-        property_override("ro.build.fingerprint", "samsung/kltedv/klte:6.0.1/MMB29M/G900IDVS1CQE1:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/kltedv/klte:6.0.1/MMB29M/G900IDVS1CQE1:user/release-keys");
         property_override("ro.build.description", "kltedv-user 6.0.1 MMB29M G900IDVS1CQE1 release-keys");
-        property_override("ro.product.model", "SM-G900I");
-        property_override("ro.product.device", "klte");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G900I");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "klte");
         gsm_properties("dv");
     } else if (bootloader.find("G900P") == 0) {
         /* kltespr */
-        property_override("ro.build.fingerprint", "samsung/kltespr/kltespr:6.0.1/MMB29M/G900PVPS3CQD1:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/kltespr/kltespr:6.0.1/MMB29M/G900PVPS3CQD1:user/release-keys");
         property_override("ro.build.description", "kltespr-user 6.0.1 MMB29M G900PVPS3CQD1 release-keys");
-        property_override("ro.product.model", "SM-G900P");
-        property_override("ro.product.device", "kltespr");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G900P");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "kltespr");
         property_set("telephony.sms.pseudo_multipart", "1");
         cdma_properties("Sprint", "310120", "8", "spr");
     }
