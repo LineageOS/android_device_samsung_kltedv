@@ -22,3 +22,5 @@ $(call inherit-product, device/samsung/kltedv/full_kltedv.mk)
 
 PRODUCT_DEVICE := kltedv
 PRODUCT_NAME := lineage_kltedv
+
+BUILD_FINGERPRINT := samsung/kltedv/klte:6.0.1/MMB29M/G900IDVS1CQE1:user/release-keys
