@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2020, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -42,40 +42,6 @@
 using android::base::GetProperty;
 using android::init::property_set;
 
-void set_rild_libpath(char const *variant)
-{
-    std::string libpath("/system/vendor/lib/libsec-ril.");
-    libpath += variant;
-    libpath += ".so";
-
-    property_override("rild.libpath", libpath.c_str());
-}
-
-void cdma_properties(char const *operator_alpha,
-        char const *operator_numeric,
-        char const *default_network,
-        char const *rild_lib_variant)
-{
-    /* Dynamic CDMA Properties */
-    property_set("ro.cdma.home.operator.alpha", operator_alpha);
-    property_set("ro.cdma.home.operator.numeric", operator_numeric);
-    property_set("ro.telephony.default_network", default_network);
-    set_rild_libpath(rild_lib_variant);
-
-    /* Static CDMA Properties */
-    property_set("ril.subscription.types", "NV,RUIM");
-    property_set("ro.telephony.default_cdma_sub", "1");
-    property_set("telephony.lteOnCdmaDevice", "1");
-}
-
-void gsm_properties(char const *rild_lib_variant)
-{
-    set_rild_libpath(rild_lib_variant);
-
-    property_set("telephony.lteOnGsmDevice", "1");
-    property_set("ro.telephony.default_network", "9");
-}
-
 void init_target_properties()
 {
     std::string platform = GetProperty("ro.board.platform", "");
@@ -90,7 +56,7 @@ void init_target_properties()
         property_override("ro.build.description", "kltedv-user 6.0.1 MMB29M G900IDVS1CQE1 release-keys");
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G900I");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "klte");
-        gsm_properties("dv");
+        gsm_properties("9", "dv");
     } else if (bootloader.find("G900P") == 0) {
         /* kltespr */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/kltespr/kltespr:6.0.1/MMB29M/G900PVPS3CQD1:user/release-keys");
@@ -98,7 +64,7 @@ void init_target_properties()
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G900P");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "kltespr");
         property_set("telephony.sms.pseudo_multipart", "1");
-        cdma_properties("Sprint", "310120", "8", "spr");
+        cdma_properties("Sprint", "310120", "1", "8", "spr");
     }
 
     std::string device = GetProperty("ro.product.device", "");
