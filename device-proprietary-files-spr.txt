@@ -1,3 +1,3 @@
-## Sprint blobs - Pinned to G900PVPU3BOK4_G900PSPT3BOK4_SPR
+## Sprint blobs - Pinned to haxxed G900PVPU3CPH3_G900PSPT3CPH3_SPR
 # Radio
-lib/libsec-ril.so:vendor/lib/libsec-ril.spr.so|408510e5d9d1935522aba554da81347f29932902
+lib/libsec-ril.so:vendor/lib/libsec-ril.spr.so|e9d48c38b6450226d69285419ab22a1817174ff6
